@@ -1,0 +1,655 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* wrappere======================here */
+.wrapper {
+  max-width: 1365px;
+  max-width: 78%;
+  margin: 0 auto;
+}
+
+/* same tags====================here */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* banner start here======================== */
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background: #001c3aa1;
+  /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(#001c3aa1, #001c3aa1), url('../images/banner.jpg');
+  background: linear-gradient(#001c3aa1, #001c3aa1), url('../images/banner.jpg');
+  /* The least supported option. */
+}
+
+.bannerText {
+  padding: 35px 0;
+  width: 58% !important;
+}
+
+.bannerText span,
+.aboutLab span,
+.whatWeOffer span,
+.ourIndustry span,
+.intrestingNumber span,
+.popularFooter figure span  {
+  color: #44b7ff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bannerText h1 {
+  color: #fff;
+  padding-top: 50px;
+  font-size: 63px;
+}
+
+.estimatedLabs {
+  padding: 20px 0 55px;
+  display: flex;
+}
+
+.estimatedLabs .labs,
+.estimatedLabs .centers {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-basis: 45%;
+}
+
+.estimatedLabs .labs::before,
+.estimatedLabs .centers::before {
+  content: "\f0c3";
+  font-family: "fontAwesome";
+  font-size: 40px;
+  background-color: #44b7ff;
+  padding: 10px;
+  margin-right: 17px;
+  text-indent: 0;
+}
+
+.estimatedLabs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.estimatedLabs li:first-child {
+  font-size: 30px;
+}
+
+.estimatedLabs li:nth-child(2) {
+  font-size: 20px;
+}
+
+.bannerText #bannerReadMore {
+  background-color: #fff;
+  color: #174370;
+  padding: 18px 47px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bannerTextSlide .slick-dots {
+  top: 35%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bannerTextSlide .slick-dots li {
+  padding: 20px !important;
+}
+
+.bannerTextSlide .slick-dots li button::before {
+  color: #fff !important;
+  font-size: 15px !important;
+}
+
+/* banner end here======================== */
+
+/* about lab start here=================================== */
+.about,
+.industry,
+.intrestingNumberSection,
+.world,
+.ourWorld,
+.project,
+.moments,
+.newsletter {
+  padding: 100px 0;
+}
+
+.aboutLab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutLab .aboutLabImg {
+  width: 42%;
+}
+
+.aboutLab .aboutLabImg img {
+  width: 100%;
+}
+
+.aboutLab .aboutLabText {
+  width: 53%;
+}
+
+.aboutLab h2,
+.aboutLab h3,
+.whatWeOffer h2,
+.whatWeOffer figcaption h3,
+.ourIndustry h2,
+.ourIndustry h3,
+.intrestingNumberOption h3,
+.projectOption h3 {
+  color: #174370;
+}
+
+.aboutLab h2,
+.whatWeOffer h2,
+.ourIndustry h2,
+.intrestingNumber h2 {
+  font-size: 45px;
+  padding: 15px 0;
+}
+
+.aboutLab p {
+  padding: 15px 0;
+  line-height: 1.4;
+}
+
+.aboutLabOption {
+  display: flex;
+  padding: 20px 0;
+}
+
+.aboutLabOption ul {
+  flex-basis: 40%;
+}
+
+.aboutLabOption span {
+  font-size: 30px;
+}
+
+.aboutLab h3 {
+  padding: 15px 0 0 0;
+  line-height: 1.4;
+}
+
+#aboutReadMore,
+#worldReadMore,
+#ourWorldReadMore,
+#viewGallery {
+  font-size: 12px;
+  padding: 15px 45px;
+  background-color: #174370;
+  color: #fff;
+}
+
+/* about lab end here=================================== */
+
+/* what we offer=============================star there=========== */
+.offer {
+  padding: 30px 0;
+  background-color: #44b7ff28;
+}
+
+.offerOption {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.offerOption figure {
+  width: 32%;
+  background-color: #fff;
+}
+
+.offerOption figure img {
+  width: 100%;
+}
+
+.offerOption figure figcaption {
+  padding: 25px;
+  line-height: 1.6;
+}
+
+.whatWeOffer figcaption h3 {
+  font-size: 25px;
+}
+
+/* what we offer=============================end there=========== */
+
+/* industry start here======================================== */
+.industry .ourIndustryOption {
+  background-image: linear-gradient(#75757583, #75757583, #75757583, #75757583), url('../images/testTube.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #8080805e;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.industry .ourIndustryOption figure:nth-child(1),
+.industry .ourIndustryOption figure:nth-child(3),
+.industry .ourIndustryOption figure:nth-child(4) {
+  background-color: #fff;
+}
+
+.industry .ourIndustryOption figure:nth-child(2),
+.industry .ourIndustryOption figure:nth-child(5) {
+  background-color: #e6e6e642;
+}
+
+
+.industry .ourIndustryOption figure {
+  padding: 30px;
+  width: 26%;
+  line-height: 1.6;
+}
+
+.industry .ourIndustryOption img {
+  width: 100px;
+}
+
+/* industry end here======================================== */
+
+/* intresting number start here===================== */
+.intrestingNumberSection {
+  text-align: center;
+  background-color: #000;
+}
+
+.intrestingNumber h2 {
+  color: #fff;
+}
+
+.intrestingNumberOption {
+  display: flex;
+}
+
+.intrestingNumberOption ul {
+  margin-top: 50px;
+  background-color: #fff;
+  border: 1px solid #c5c5c5;
+  padding: 50px;
+  line-height: 1.6;
+  position: relative;
+}
+
+.intrestingNumberOption ul::before {
+  font-family: "fontAwesome";
+  text-indent: 0;
+  position: absolute;
+  padding: 10px 20px;
+  color: #44b7ff;
+  top: -3%;
+  /* left: 40%;
+  right: 40%; */
+  transform: translate(-50%,-50%);
+  font-size: 25px;
+  background-color: #eee;
+}
+
+.intrestingNumberOption .ratings::before {
+  content: "\f044";
+
+}
+
+.intrestingNumberOption .tests::before {
+  content: "\f260";
+
+}
+
+.intrestingNumberOption .accurates::before {
+  content: "\f02d";
+
+}
+
+.intrestingNumberOption li:first-child {
+  color: #44b7ff;
+  font-size: 50px;
+}
+
+/* intresting number end here===================== */
+
+/* world senction start here========================= */
+.worldTogether,
+.worldFacility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.worldText h2{
+  font-size: 28px;
+}
+
+
+.worldTogether figure,
+.worldTogether .worldText,
+.worldFacility figure,
+.worldFacility .ourWorldText {
+  width: 48%;
+}
+
+.worldTogether figure img,
+.worldFacility figure img {
+  width: 100%;
+}
+
+.worldTogether .worldText,
+.worldFacility .ourWorldText {
+  line-height: 1.6;
+}
+
+.worldTogether .worldText p,
+.worldFacility .ourWorldText p {
+  font-size: 14px;
+  padding: 15px 0;
+}
+
+/* world section end here========================= */
+
+/*our world section start here========================= */
+.ourWorld {
+  background-color: #eee;
+}
+#ourWorldReadMore,
+#viewGallery {
+  background-color: #ff8c00;}
+
+#worldReadMore,
+#ourWorldReadMore,
+#viewGallery {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/*our world section end here========================= */
+
+/* project start here=============================== */
+.projectOption,
+.momentsOption {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #eeeeee3f;
+  line-height: 1.6;
+}
+
+.projectOption figure,
+.momentsOption figure {
+  width: 30%;
+  background-color: #fff;
+}
+
+.projectOption figure img,
+.momentsOption figure img {
+  width: 100%;
+}
+
+.projectOption figcaption {
+  padding: 20px;
+  position: relative;
+}
+
+.projectOption span {
+  position: absolute;
+  top: -20%;
+  left: 0%;
+  font-size: 12px;
+  background-color: #174370;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+/* project end here=============================== */
+
+/* moments start here------------------------------- */
+.moments {
+  text-align: center;
+  background-color: #eee;
+}
+
+.moments h2 {
+  padding-bottom: 50px;
+}
+/* moments end here------------------------------- */
+
+/* newsletter start here============================ */
+.newsletter{
+  background-color: #eee;
+}
+.newsletterSubscribe{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ourWorldText h2,
+.moments h2,
+.newsletterSubscribe h2{
+  font-size: 30px;
+}
+.newsletterSubscribe form{
+  background-color: #fff;
+  border: 1px solid #aaa;
+  display: flex;
+}
+#subscribe{
+  background-color: #db0054;
+  color: #fff;
+}
+#email,
+#subscribe{
+  padding: 20px;
+}
+
+#email{
+  border: transparent;
+  width: 400px;
+}
+/* newsletter end here============================ */
+
+/* footer start here======================================== */
+footer{
+  background-color: #174370;
+  padding: 100px 0;
+  line-height: 2;
+}
+footer h3{
+  padding-bottom: 20px;
+}
+footer,
+footer a{
+  color: #fff;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .whoWeAre,
+.footer .footerLinks,
+.footer .popularFooter{
+  width: 30%;
+}
+
+.footer .footerLinks ul{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer .footerLinks li{
+  flex-basis: 150px;
+}
+
+.footer .footerLinks a:hover{
+  color: #44b7ff;
+}
+
+.labAcc{
+  display: flex;
+  align-items: center;
+}
+.labAcc::before {
+  content: "\f260";
+  font-family: "fontAwesome";
+  background-color: #44b7ff;
+  padding: 0 15px;
+  font-size: 30px;
+  margin-right: 20px;
+
+}
+
+.popularFooter figure{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  line-height: 1.6;
+}
+.popularFooter figure img{
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+/* footer start here======================================== */
+/* =
+=
+==
+=
+==
+=
+=
+= */
+  /* responsivehere======================start============ */
+  @media only screen and (max-width: 1115px) {
+    .bannerText {
+      width: 80% !important;
+    }
+    .aboutLab{
+      flex-direction: column;
+    }
+    .aboutLab .aboutLabText{
+      width: 100%;
+    }
+    .whatWeOffer figcaption h3 {
+      font-size: 20px;
+  }
+  .industry .ourIndustryOption figure {
+    width: 250px;
+    }  }
+
+
+  @media only screen and (max-width: 1124px) {
+
+    .newsletterSubscribe h2 {
+      margin-bottom: 30px;
+  }
+.newsletterSubscribe {
+  flex-direction: column;
+}
+  .projectOption h3 {
+    font-size: 15px;
+}}
+
+@media only screen and (max-width:995px) {
+  .footer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer .whoWeAre, .footer .footerLinks, .footer .popularFooter {
+    width: 100%;
+    padding-top: 30px;
+}
+.intrestingNumberOption {
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: space-around;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerText h1 {
+    font-size: 40px;
+}
+.estimatedLabs li:nth-child(2) {
+  font-size: 15px;
+}
+.aboutLab h2, .whatWeOffer h2, .ourIndustry h2, .intrestingNumber h2 {
+  font-size: 30px;
+  padding: 15px 0;
+}
+
+.aboutLab h3,
+.whatWeOffer figcaption h3{
+  font-size: 18px
+}
+
+.offerOption figure,
+.projectOption figure, .momentsOption figure {
+  width: 250px;
+  margin: 10px;
+}
+
+
+}
+
+@media only screen and (max-width: 580px) {
+
+.aboutLab .aboutLabImg {
+  width: 100%;
+}
+.aboutLabOption {
+  justify-content: space-between;
+}
+
+.worldTogether,
+.worldFacility {
+  flex-direction: column;
+}
+
+.worldTogether figure,
+.worldTogether .worldText,
+.worldFacility figure,
+.worldFacility .ourWorldText{
+  width: 100%;
+}
+
+#ourWorldReadMore{
+  margin: 30px 0;
+}
+
+.bannerText,
+#email {
+  width: 100%;
+}
+
+.header .callNavbar {
+  width: 70% !important;
+}
+.estimatedLabs {
+  flex-direction: column;
+}
+
+.estimatedLabs ul{
+  padding: 10px 0;
+  width: 100%;
+}
+}
